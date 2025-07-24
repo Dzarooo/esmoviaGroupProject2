@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
+import { Dog } from './components/dog'
 function App() {
 
   return (
