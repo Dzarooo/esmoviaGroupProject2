@@ -1,0 +1,143 @@
+
+.card {
+    width: 600px;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(230, 220, 220, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 0;
+    display: none;
+}
+
+.toggle-content.expanded {
+    display: block;
+    max-height: 500px;
+    margin-top: 10px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.rotated {
+    transform: rotate(180deg);
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main a {
+    color: black;
+}
+
+main a:visited {
+    color: black;
+}
+
+.feedback-card {
+    width: 600px;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(230, 220, 220, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto 20px;
+}
+
+.feedback-card h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.stars span {
+    cursor: pointer;
+}
+
+.star {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.feedback-card textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    font-size: 14px;
+    resize: vertical;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+}
+
+.feedback-card button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #fc3c11 0%, #ff6f1b 100%);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+#closeAllBtn {
+    appearance: none;
+    border-radius:10px;
+    border: 2px solid #bbb;
+    padding:5px;
+    font-size:15px;
+}
