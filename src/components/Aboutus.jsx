@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/aboutus.css';
 
-export const AboutUsCards = () => {
+export const AboutUs = () => {
   const [expandedCards, setExpandedCards] = useState([]);
   const [selectedRating, setSelectedRating] = useState(0);
   const [feedbackText, setFeedbackText] = useState('');
