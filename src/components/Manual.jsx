@@ -76,6 +76,9 @@ export const Manual = () => {
                         </tr>
                     </table>
                 </article>
+                <article>
+                    <button onClick={() => {alert("You thought?")}}>Epic Button that has magical properties</button>
+                </article>
             </div>
         </main>
     );
