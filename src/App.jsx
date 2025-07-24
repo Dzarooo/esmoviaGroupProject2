@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Manual from "./pages/Manual.jsx";
 // import Dog from "./pages/Dog.jsx";
 // import AboutUs from "./pages/AboutUs.jsx";
+import { useState } from 'react'
+import './App.css'
 
 function App() {
   return (
