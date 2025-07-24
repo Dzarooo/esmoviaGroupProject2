@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -30,6 +31,30 @@ function App() {
       </p>
     </>
   )
+=======
+import "./App.css";
+import { Header } from "./components/Header.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// import Home from "./pages/Home.jsx";
+// import Manual from "./pages/Manual.jsx";
+// import Dog from "./pages/Dog.jsx";
+// import AboutUs from "./pages/AboutUs.jsx";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/manual" element={<Manual />} />
+        <Route path="/dog" element={<Dog />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
+  );
+>>>>>>> Stashed changes
 }
 
-export default App
+export default App;
