@@ -34,28 +34,47 @@ export const AboutUsCards = () => {
   return (
     <div className="my-5 flex flex-col items-center gap-5">
       <div className="w-[600px] bg-gray-100 border-2 border-gray-300 rounded-xl shadow-md p-2.5">
-        <div className="flex justify-between items-center"><h1 className="text-xl m-0">What is this website?</h1><button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(0) ? 'rotate-180' : ''}`} onClick={() => toggleCard(0)}>v</button></div>
+        <div className="flex justify-between items-center">
+            <h1 className="text-xl m-0">What is this website?</h1>
+            <button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(0) ? 'rotate-180' : ''}`} onClick={() => toggleCard(0)}>v</button>
+        </div>
         <div className={`overflow-hidden transition-all duration-500 ${expandedCards.includes(0) ? 'max-h-[500px] mt-2.5 block' : 'max-h-0 mt-0 hidden'}`}>
-          <p className="my-1">This website teaches you how to defuse a bomb in the game "Keep Talking and Nobody Explodes".</p><p className="my-1">It also contains an API called <a href="https://dog.ceo/dog-api/" className="text-black visited:text-black">DogAPI</a></p>
+          <p className="my-1">This website teaches you how to defuse a bomb in the game "Keep Talking and Nobody Explodes".</p>
+          <p className="my-1">It also contains an API called <a href="https://dog.ceo/dog-api/" className="text-black visited:text-black">DogAPI</a></p>
         </div>
       </div>
 
       <div className="w-[600px] bg-gray-100 border-2 border-gray-300 rounded-xl shadow-md p-2.5">
-        <div className="flex justify-between items-center"><h1 className="text-xl m-0">Who are we?</h1><button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(1) ? 'rotate-180' : ''}`} onClick={() => toggleCard(1)}>v</button></div>
-        <div className={`overflow-hidden transition-all duration-500 ${expandedCards.includes(1) ? 'max-h-[500px] mt-2.5 block' : 'max-h-0 mt-0 hidden'}`}><p className="my-1">We are polish students from a technical high school called SCI, which is located in Szczecin.</p></div>
+        <div className="flex justify-between items-center">
+            <h1 className="text-xl m-0">Who are we?</h1>
+            <button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(1) ? 'rotate-180' : ''}`} onClick={() => toggleCard(1)}>v</button>
+        </div>
+        <div className={`overflow-hidden transition-all duration-500 ${expandedCards.includes(1) ? 'max-h-[500px] mt-2.5 block' : 'max-h-0 mt-0 hidden'}`}>
+            <p className="my-1">We are polish students from a technical high school called SCI, which is located in Szczecin.</p></div>
       </div>
 
       <div className="w-[600px] bg-gray-100 border-2 border-gray-300 rounded-xl shadow-md p-2.5">
-        <div className="flex justify-between items-center"><h1 className="text-xl m-0">What is "Keep Talking and Nobody Explodes"?</h1><button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(2) ? 'rotate-180' : ''}`} onClick={() => toggleCard(2)}>v</button></div>
+        <div className="flex justify-between items-center">
+            <h1 className="text-xl m-0">What is "Keep Talking and Nobody Explodes"?</h1>
+            <button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(2) ? 'rotate-180' : ''}`} onClick={() => toggleCard(2)}>v</button>
+        </div>
         <div className={`overflow-hidden transition-all duration-500 ${expandedCards.includes(2) ? 'max-h-[500px] mt-2.5 block' : 'max-h-0 mt-0 hidden'}`}>
-          <p className="my-1">"Keep Talking and Nobody Explodes" is a cooperative party game.</p><p className="my-1">One player tries to defuse a bomb using instructions from others who read the manual.</p><p className="my-1">The game challenges communication and problem-solving skills under time pressure.</p><p className="my-1"><a href="https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/" className="text-black visited:text-black">Feel free to check it out here</a></p>
+          <p className="my-1">"Keep Talking and Nobody Explodes" is a cooperative party game.</p>
+          <p className="my-1">One player tries to defuse a bomb using instructions from others who read the manual.</p>
+          <p className="my-1">The game challenges communication and problem-solving skills under time pressure.</p>
+          <p className="my-1"><a href="https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/" className="text-black visited:text-black">Feel free to check it out here</a></p>
         </div>
       </div>
 
       <div className="w-[600px] bg-gray-100 border-2 border-gray-300 rounded-xl shadow-md p-2.5">
-        <div className="flex justify-between items-center"><h1 className="text-xl m-0">What is DogAPI?</h1><button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(3) ? 'rotate-180' : ''}`} onClick={() => toggleCard(3)}>v</button></div>
+        <div className="flex justify-between items-center">
+            <h1 className="text-xl m-0">What is DogAPI?</h1>
+            <button className={`bg-transparent border-none text-2xl cursor-pointer transition-transform duration-300 ${expandedCards.includes(3) ? 'rotate-180' : ''}`} onClick={() => toggleCard(3)}>v</button>
+        </div>
         <div className={`overflow-hidden transition-all duration-500 ${expandedCards.includes(3) ? 'max-h-[500px] mt-2.5 block' : 'max-h-0 mt-0 hidden'}`}>
-          <p className="my-1">DogAPI is a free API that provides random dog images and facts.</p><p className="my-1">This site uses DogAPI to fetch and display cute dog pictures for fun and relaxation.</p><p className="my-1">You can learn more at <a href="https://dog.ceo/dog-api/" className="text-black visited:text-black">dog.ceo/dog-api</a>.</p>
+          <p className="my-1">DogAPI is a free API that provides random dog images and facts.</p>
+          <p className="my-1">This site uses DogAPI to fetch and display cute dog pictures for fun and relaxation.</p>
+          <p className="my-1">You can learn more at <a href="https://dog.ceo/dog-api/" className="text-black visited:text-black">dog.ceo/dog-api</a>.</p>
         </div>
       </div>
 
