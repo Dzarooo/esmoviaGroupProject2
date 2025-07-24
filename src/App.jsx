@@ -8,7 +8,7 @@ import { Manual } from "./components/Manual.jsx";
 import { AboutUs } from "./components/AboutUs.jsx";
 import { useState } from 'react'
 import './App.css'
-
+import { Dog } from './components/dog'
 function App() {
   return (
     <BrowserRouter>
