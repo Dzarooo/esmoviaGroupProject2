@@ -1,6 +1,6 @@
 export const Manual = () => {
     return (
-        <main>
+        <main className="flex justify-center">
             <div>
                 <article>
                     <h1>Before you start</h1>
@@ -15,22 +15,22 @@ export const Manual = () => {
                             <li>What indicators are turned on</li>
                         </ul>
                     </p>
-                    <table>
+                    <table className="border border-solid border-black">
                         <tr>
-                            <td>
+                            <td className="border border-solid border-black">
                                 Indicators
                             </td>
-                            <td>
-                                <img src="https://www.bombmanual.com/web/img/appendix/indicators/IndicatorWidget.svg" alt="" />
+                            <td className="border border-solid border-black">
+                                <img className="w-md" src="https://www.bombmanual.com/web/img/appendix/indicators/IndicatorWidget.svg" alt="" />
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className="border border-solid border-black">
                                 Parallel port
                             </td>
-                            <td>
-                                <img src="https://www.bombmanual.com/web/img/appendix/ports/Parallel.svg" alt="" />
-                            </td>
+                            <td className="border border-solid border-black">
+                                <img className="w-md" src="https://www.bombmanual.com/web/img/appendix/ports/Parallel.svg" alt="" />
+                            </td >
                         </tr>
                     </table>
                 </article>
