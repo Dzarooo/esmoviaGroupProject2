@@ -1,4 +1,4 @@
-export const Manual = () => {
+const Manual = () => {
     return (
         <main className="flex justify-center">
             <div className="bg-amber-50 px-2">
@@ -79,4 +79,5 @@ export const Manual = () => {
             </div>
         </main>
     );
-}
+};
+export default Manual;

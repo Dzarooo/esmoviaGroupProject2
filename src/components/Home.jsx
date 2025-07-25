@@ -1,6 +1,6 @@
-import "../css/Home.css"
+import "../css/Home.css";
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
             <main id="homeMain" className="text-[#fff] bg-[#222] min-h-[90vh] flex flex-col justify-center items-center relative z-1">
@@ -26,3 +26,4 @@ export const Home = () => {
         </>
     );
 }
+export default Home;
