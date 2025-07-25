@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 
 export const Dog = () => {
-    const [loading, setLoading] = useState(false);
-    const [images, setImages] = useState(["https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg"]);
 
-    function getRandomImage() {
-        setLoading(true);
-        fetch('https://dog.ceo/api/breeds/image/random/3')
-            .then(res => res.json())
-            .then(data => {
-                setImages(data.message);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            })
-            .finally(() => {
-                setLoading(false);
-            });
-    }
+  const [loading, setLoading] = useState(false);
+  const [images, setImages] = useState(["https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg"]);
 
-    return (
+  function getRandomImage() {
+    setLoading(true);
+    fetch("https://dog.ceo/api/breeds/image/random/3")
+      .then((res) => res.json())
+      .then((data) => {
+        setImages(data.message);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }
+
+  return (
         <>
             <div className="h-[70vh] flex flex-col justify-center items-center text-[25px]">
                 <p className="text-center">Every bomb defuser needs a</p>
