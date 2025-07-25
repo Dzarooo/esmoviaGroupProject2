@@ -1,7 +1,7 @@
 export const Manual = () => {
     return (
         <main className="flex justify-center">
-            <div>
+            <div className="bg-amber-50 px-2">
                 <article>
                     <h1 className="text-5xl">Before you start</h1>
                     <p>
@@ -75,9 +75,6 @@ export const Manual = () => {
                             </td>
                         </tr>
                     </table>
-                </article>
-                <article>
-                    <button onClick={() => {alert("You thought?")}} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Epic Button that has magical properties</button>
                 </article>
             </div>
         </main>
