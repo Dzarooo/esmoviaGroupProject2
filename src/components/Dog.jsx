@@ -10,7 +10,7 @@ export const Dog = () => {
     const [showCatGif, setShowCatGif] = useState(false);
 
     function getRandomImage() {
-        if (Math.floor(Math.random() * 10) === 1) {
+        if (Math.floor(Math.random() * 20) === 1) {
             setShowCatGif(true);
             return;
         }
