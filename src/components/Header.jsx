@@ -27,9 +27,7 @@ export const Header = () => {
   };
 
   const cancel = () => {
-    setShowPopup(true);
     setDiceResult(null);
-    setPendingPath(null);
   };
 
   return (
@@ -87,7 +85,7 @@ export const Header = () => {
             ) : (
               <>
                 <p className="text-lg mt-2">
-                  Resoult: <span className="font-bold">{diceResult}</span>
+                  Result: <span className="font-bold">{diceResult}</span>
                 </p>
                 {diceResult >= 4 ? (
                   <button
@@ -105,7 +103,7 @@ export const Header = () => {
                   onClick={cancel}
                   className="mt-2 px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
                 >
-                  Cancle
+                  Cancel
                 </button>
               </>
             )}
