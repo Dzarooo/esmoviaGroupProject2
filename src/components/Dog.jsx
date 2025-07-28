@@ -10,7 +10,7 @@ export const Dog = () => {
     const [showCatGif, setShowCatGif] = useState(false);
 
     function getRandomImage() {
-        if (Math.floor(Math.random() * 20) === 1) {
+        if (Math.floor(Math.random() * 5) === 1) {
             setShowCatGif(true);
             return;
         }
@@ -36,7 +36,7 @@ export const Dog = () => {
     if (showCatGif) {
         return (
             <div className="flex flex-col items-center justify-center w-full h-100 mt-20">
-                <img src="../esmoviaGroupProject2/cat.gif" alt="Cat Spinning" className="object-contain w-full h-full" />
+                <img src="/esmoviaGroupProject2/cat.gif" alt="Cat Spinning" className="object-contain w-full h-full" />
                 <button onClick={endCat} className="appearance-none bg-[#3d3d3d] text-white p-[15px] text-[16px] cursor-pointer mt-[20px] rounded-[5px]">End cats life</button>
             </div>
         );
