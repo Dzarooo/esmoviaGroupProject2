@@ -1,15 +1,15 @@
-import "../css/Home.css"
+import "../css/Home.css";
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
-            <main>
-                <div>
-                    <span id="mainText">Keep talking and nobody explodes - guide</span>
+            <main className="homeMain text-[#fff] bg-[#222] min-h-[90vh] flex flex-col justify-center items-center relative z-1">
+                <div className="z-2 text-center p-[20px] bg-[rgba(0,0,0,0.4)] rounded-[10px]">
+                    <span className="text-[3rem] font-[700] uppercase tracking-[2px] [animation:fadeIn_2s_ease-in-out;]">Keep talking and nobody explodes - guide</span>
                 </div>
 
-                <section class="game-description">
-                    <h2>About the Game</h2>
+                <section className="z-2 bg-[rgba(0,0,0,0.4)] p-[40px] text-center text-[1.2rem] leading-[1.6] w-[80%] [margin:40px_auto] rounded-[10px]">
+                    <h2 className="text-[2rem] mb-[20px]">About the Game</h2>
                     <p>
                         "Keep Talking and Nobody Explodes" is a fast-paced multiplayer party game where one player takes on
                         the role of a bomb defuser, while the rest of the team provides critical instructions to help disarm
@@ -26,3 +26,5 @@ export const Home = () => {
         </>
     );
 }
+
+export default Home;
