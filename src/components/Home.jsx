@@ -36,7 +36,7 @@ const Home = () => {
                     </p>
                 </section>
                 <section className="z-2 bg-[rgba(0,0,0,0.4)] p-[40px] text-center text-[1.2rem] leading-[1.6] w-[80%] [margin:40px_auto] rounded-[10px]">
-                    <h2 className="text-[2rem] mb-[20px]">Number of people who didn't explode (yet): {timer}</h2>
+                    <h2 className="text-[2rem] mb-[20px]">Number of people who haven't exploded (yet): {timer}</h2>
                 </section>
             </main>
         </>
