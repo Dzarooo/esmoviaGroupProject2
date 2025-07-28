@@ -1,9 +1,9 @@
 const Manual = () => {
     return (
         <main className="manualMain flex justify-center">
-            <div className="bg-amber-50 px-2">
+            <div className="bg-amber-50 mt-10 p-8 rounded-xl">
                 <article>
-                    <h1 className="text-5xl">Before you start</h1>
+                    <h1 className="text-5xl border-b-black border-b-2 !pb-2">Before you start</h1>
                     <p className="text-xl">
                         Create a table with the info about the bomb.
                         <br /> By that we mean:
@@ -35,7 +35,7 @@ const Manual = () => {
                     </table>
                 </article>
                 <article>
-                    <h1 className="text-5xl">Wires</h1>
+                    <h1 className="!mt-10 text-5xl border-b-black border-b-2 !pb-2">Wires</h1>
                     <table>
                         <tr>
                             <td>
@@ -77,7 +77,7 @@ const Manual = () => {
                     </table>
                 </article>
                 <article>
-                    <h1 className="text-5xl">Button</h1>
+                    <h1 className="!mt-10 text-5xl border-b-black border-b-2 !pb-2">Button</h1>
                     <p className="text-xl">If the manual says "hold", refer to "Releasing Held Button"</p>
                     <p>If <span className="bg-blue-500">Abort</span>, <b>Hold</b></p>
                     <p>If <b>"Detonate"</b> and <b>(1)ONE</b> or more Batteries, <b>Click</b></p>
