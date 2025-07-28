@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Dog = () => {
+const Dog = () => {
 
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState(["https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg"]);
@@ -37,3 +37,5 @@ export const Dog = () => {
         </>
     );
 }
+
+export default Dog;

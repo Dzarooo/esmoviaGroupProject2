@@ -12,7 +12,11 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Suspense fallback={<div className="text-center mt-10">Loading...</div>}>
+      <Suspense fallback={<div className="flex justify-center gap-2 mt-20">
+        <div className="bg-gray-400 opacity-0 w-[30px] h-[30px] rounded-full animate-[loadingDot_0.5s_infinite]"></div>
+        <div className="bg-gray-400 opacity-0 w-[30px] h-[30px] rounded-full animate-[loadingDot_0.5s_infinite]"></div>
+        <div className="bg-gray-400 opacity-0 w-[30px] h-[30px] rounded-full animate-[loadingDot_0.5s_infinite]"></div>
+      </div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/manual" element={<Manual />} />

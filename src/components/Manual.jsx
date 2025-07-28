@@ -80,4 +80,5 @@ const Manual = () => {
         </main>
     );
 };
+
 export default Manual;
