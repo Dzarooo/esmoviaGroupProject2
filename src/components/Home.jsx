@@ -1,6 +1,19 @@
+import { useEffect, useState } from "react";
 import "../css/Home.css";
 
 const Home = () => {
+
+    const [timer, setTimer] = useState(1);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTimer(prevTime => prevTime + Math.floor(Math.random() * 10) + 1);
+        }, 1000); // Delay belongs here, not inside setTimer
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+
     return (
         <>
             <main className="homeMain text-[#fff] bg-[#222] min-h-[90vh] flex flex-col justify-center items-center relative z-1">
@@ -21,6 +34,9 @@ const Home = () => {
                         Whether you’re cutting wires or navigating complex memory sequences, we've got you covered. Ready to
                         save the day? Let’s dive in!
                     </p>
+                </section>
+                <section className="z-2 bg-[rgba(0,0,0,0.4)] p-[40px] text-center text-[1.2rem] leading-[1.6] w-[80%] [margin:40px_auto] rounded-[10px]">
+                    <h2 className="text-[2rem] mb-[20px]">Number of people who didn't explode (yet): {timer}</h2>
                 </section>
             </main>
         </>
