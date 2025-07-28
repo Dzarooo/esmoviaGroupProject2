@@ -2,9 +2,18 @@ import React, { useState } from "react";
 
 export const Dog = () => {
     const [loading, setLoading] = useState(false);
-    const [images, setImages] = useState(["https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg", "https://dog.ceo/img/dog-api-logo.svg"]);
+    const [images, setImages] = useState([
+        "https://dog.ceo/img/dog-api-logo.svg",
+        "https://dog.ceo/img/dog-api-logo.svg",
+        "https://dog.ceo/img/dog-api-logo.svg"
+    ]);
+    const [showCatGif, setShowCatGif] = useState(false);
 
     function getRandomImage() {
+        if (Math.floor(Math.random() * 10) === 1) {
+            setShowCatGif(true);
+            return;
+        }
         setLoading(true);
         fetch('https://dog.ceo/api/breeds/image/random/3')
             .then(res => res.json())
@@ -19,11 +28,20 @@ export const Dog = () => {
             });
     }
 
+    // Overlay for cat gif
+    if (showCatGif) {
+        return (
+            <div className="box-border top-0 left-0 flex items-center justify-center w-full h-100 position-fixed z-9999">
+                <img src="../esmoviaGroupProject2/cat.gif" alt="Cat Spinning" className="object-contain w-full h-full" />
+            </div>
+        );
+    }
+
     return (
         <>
-            <div className="h-[70vh] flex flex-col justify-center items-center text-[25px]">
+            <div className="h-[70vh] flex flex-col justify-center items-center text-[25px] ">
                 <p className="text-center">Every bomb defuser needs a</p>
-                <p className="text-5xl text-orange-500 text-center font-bold">Break.</p>
+                <p className="text-5xl font-bold text-center text-orange-500">Break.</p>
                 <p>Here, generate some cute dog pictures to lighten the mood.</p>
                 <button onClick={getRandomImage} id="generateButton" className="appearance-none bg-[#3d3d3d] text-white p-[15px] text-[16px] cursor-pointer mt-[20px] rounded-[5px]">Generate</button><br />
                 <div id="loading_text" style={{ display: loading ? "block" : "none" }}>Loading...</div>
