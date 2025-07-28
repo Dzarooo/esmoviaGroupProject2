@@ -3,7 +3,7 @@ import "../css/Home.css";
 const Home = () => {
     return (
         <>
-            <main id="homeMain" className="text-[#fff] bg-[#222] min-h-[90vh] flex flex-col justify-center items-center relative z-1">
+            <main className="homeMain text-[#fff] bg-[#222] min-h-[90vh] flex flex-col justify-center items-center relative z-1">
                 <div className="z-2 text-center p-[20px] bg-[rgba(0,0,0,0.4)] rounded-[10px]">
                     <span className="text-[3rem] font-[700] uppercase tracking-[2px] [animation:fadeIn_2s_ease-in-out;]">Keep talking and nobody explodes - guide</span>
                 </div>

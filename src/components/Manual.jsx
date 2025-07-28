@@ -1,6 +1,6 @@
 const Manual = () => {
     return (
-        <main className="flex justify-center">
+        <main className="manualMain flex justify-center">
             <div className="bg-amber-50 px-2">
                 <article>
                     <h1 className="text-5xl">Before you start</h1>
