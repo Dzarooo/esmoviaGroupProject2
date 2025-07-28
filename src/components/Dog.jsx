@@ -35,9 +35,9 @@ export const Dog = () => {
     // Overlay for cat gif
     if (showCatGif) {
         return (
-            <div className="box-border top-0 left-0 flex items-center justify-center w-full h-100 position-fixed z-9999">
-                <button onClick={endCat} className="appearance-none bg-[#3d3d3d] text-white p-[15px] text-[16px] cursor-pointer mt-[20px] rounded-[5px]">End cats life</button>
+            <div className="flex flex-col items-center justify-center w-full h-100 mt-20">
                 <img src="../esmoviaGroupProject2/cat.gif" alt="Cat Spinning" className="object-contain w-full h-full" />
+                <button onClick={endCat} className="appearance-none bg-[#3d3d3d] text-white p-[15px] text-[16px] cursor-pointer mt-[20px] rounded-[5px]">End cats life</button>
             </div>
         );
     }
